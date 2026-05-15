@@ -1,0 +1,27 @@
+# Armando Contrereas 5/10/2026
+# ps11P2
+#Input/Process
+def get_input():
+    text = input("Enter a Line of Text: ")
+    return text
+    
+#Process
+def clean_edges(text):
+    return text.strip()
+
+def remove_extra_spaces(text):
+    words = text.split()
+    return " ".join(words)
+
+def reverse_text(text):
+    return text[::-1]
+    
+text = get_input()
+
+text = clean_edges(text)
+text = remove_extra_spaces(text)
+reversed_text = reverse_text(text)
+
+# Output
+print("\nProcessed and Reversed Text:")
+print(reversed_text)
