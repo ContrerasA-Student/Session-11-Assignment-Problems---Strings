@@ -1,0 +1,31 @@
+# Armando Contrereas 5/10/2026
+# ps11P1
+#Input/Process??
+def Name():
+    return input("Enter First and Last Name: ")
+
+def formatName(FullName):
+
+    FullName = FullName.strip()
+    parts = FullName.split()
+
+    if len(parts) != 2:
+        return None
+
+    fname = parts[0]
+    lname = parts[1]
+
+    FormattedName = lname.capitalize() + ", " + fname[0].upper() + "."
+    return FormattedName
+
+# Output
+def display_result(result):
+
+    if result is None:
+        print("\nInvalid Input. Please Enter Exactly: Firstname AND Lastname")
+    else:
+        print("\nFormatted Name:", result)
+
+InputofName = Name()
+Formatted = formatName(InputofName)
+display_result(Formatted)
