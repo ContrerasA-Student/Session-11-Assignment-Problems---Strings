@@ -1,0 +1,11 @@
+# Armando Contrereas 5/10/2026
+# ps11P3
+# Input
+data = input("Enter Comma-Separated Values: ")
+
+# Process
+items = data.split(",")
+
+# Output 
+for item in items:
+    print(item.strip())
