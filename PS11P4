@@ -1,20 +1,20 @@
 # Armando Contrereas 5/10/2026
 # ps11P4
 # Input
-text = input("Enter a Line of Text: ")
-line_length = int(input("Enter Number of Characters per Line: "))
-num_lines = int(input("Enter Number of Lines to Print: "))
-direction = input("Enter Scroll Direction (Left or Right): ").lower()
+Text = input("Enter a Line of Text: ")
+LineLength = int(input("Enter Number of Characters per Line: "))
+NumberOfLines = int(input("Enter Number of Lines to Print: "))
+Direction = input("Enter Scroll Direction (Left or Right): ").lower()
 
 # Process
-base_text = (text * ((line_length // len(text)) + 2))[:line_length]
+BaseText = (Text * ((LineLength // len(Text)) + 2))[:LineLength]
 
 # Output
-current = base_text
+current = BaseText
 
-for i in range(num_lines):
+for i in range(NumberOfLines):
     print(current)
-    if direction == "Left":
+    if Direction == "Left":
         current = current[1:] + current[0]
-    elif direction == "Right":
+    elif Direction == "Right":
         current = current[-1] + current[:-1]
