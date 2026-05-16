@@ -1,10 +1,11 @@
 # Armando Contrereas 5/10/2026
 # ps11P2
 #Input/Process
+#racecar
 def get_input():
     text = input("Enter a Line of Text: ")
     return text
-    
+
 #Process
 def clean_edges(text):
     return text.strip()
@@ -15,7 +16,7 @@ def remove_extra_spaces(text):
 
 def reverse_text(text):
     return text[::-1]
-    
+
 text = get_input()
 
 text = clean_edges(text)
