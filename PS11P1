@@ -4,9 +4,9 @@
 def Name():
     return input("Enter First and Last Name: ")
 
-def formatName(FullName):
+def FormatName(FullName):
 
-    FullName = FullName.strip()
+    Fname = FullName.strip()
     parts = FullName.split()
 
     if len(parts) != 2:
@@ -19,13 +19,13 @@ def formatName(FullName):
     return FormattedName
 
 # Output
-def display_result(result):
+def OutputProduct(result):
 
     if result is None:
-        print("\nInvalid Input. Please Enter Exactly: Firstname AND Lastname")
+        print("\nInvalid Input. Please Enter Exactly: Firstname AND Lastname: ")
     else:
-        print("\nFormatted Name:", result)
+        print("\nFormatted Name: ", result)
 
 InputofName = Name()
-Formatted = formatName(InputofName)
-display_result(Formatted)
+Formatted = FormatName(InputofName)
+OutputProduct(Formatted)
